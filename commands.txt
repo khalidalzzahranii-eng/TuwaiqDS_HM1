@@ -1,0 +1,442 @@
+C:\Users\Lenovo\Downloads\cmder (main)
+λ cd %USERPROFILE%\Desktop\Tuwaiq_HM1
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+λ rmdir /S /Q .venv
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+λ py -m venv .venv
+Error: Command '['C:\\Users\\Lenovo\\Desktop\\Tuwaiq_HM1\\.venv\\Scripts\\python.exe', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+λ rmdir /S /Q .venv
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+λ py -m venv .venv --without-pip
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+λ .\.venv\Scripts\activate.bat
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv) λ python -m ensurepip --default-pip
+Looking in links: c:\Users\Lenovo\AppData\Local\Temp\tmpxmx_ecfi
+Processing c:\users\lenovo\appdata\local\temp\tmpxmx_ecfi\pip-24.3.1-py3-none-any.whl
+Installing collected packages: pip
+  WARNING: Failed to write executable - trying to use .deleteme logic
+ERROR: Could not install packages due to an OSError: [WinError 5] Access is denied: 'C:\\Users\\Lenovo\\Desktop\\Tuwaiq_HM1\\.venv\\Scripts\\pip.exe' -> 'C:\\Users\\Lenovo\\Desktop\\Tuwaiq_HM1\\.venv\\Scripts\\pip.exe.deleteme'
+Check the permissions.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\ensurepip\__main__.py", line 5, in <module>
+    sys.exit(ensurepip._main())
+             ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\ensurepip\__init__.py", line 257, in _main
+    return _bootstrap(
+        root=args.root,
+    ...<4 lines>...
+        default_pip=args.default_pip,
+    )
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\ensurepip\__init__.py", line 172, in _bootstrap
+    return _run_pip([*args, "pip"], [os.fsdecode(tmp_wheel_path)])
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\ensurepip\__init__.py", line 87, in _run_pip
+    return subprocess.run(cmd, check=True).returncode
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\Lenovo\\Desktop\\Tuwaiq_HM1\\.venv\\Scripts\\python.exe', '-W', 'ignore::DeprecationWarning', '-c', '\nimport runpy\nimport sys\nsys.path = [\'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\tmpxmx_ecfi\\\\pip-24.3.1-py3-none-any.whl\'] + sys.path\nsys.argv[1:] = [\'install\', \'--no-cache-dir\', \'--no-index\', \'--find-links\', \'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\tmpxmx_ecfi\', \'pip\']\nrunpy.run_module("pip", run_name="__main__", alter_sys=True)\n']' returned non-zero exit status 1.
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv) λ rmdir /S /Q .venv
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv) λ py -m pip --version
+pip 24.3.1 from C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\site-packages\pip (python 3.13)
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv) λ deactivate
+'deactivate' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv) λ cd %USERPROFILE%\Desktop\Tuwaiq_HM1
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv) λ py -m pip install --user virtualenv
+Collecting virtualenv
+  Downloading virtualenv-20.34.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting distlib<1,>=0.3.7 (from virtualenv)
+  Downloading distlib-0.4.0-py2.py3-none-any.whl.metadata (5.2 kB)
+Collecting filelock<4,>=3.12.2 (from virtualenv)
+  Downloading filelock-3.19.1-py3-none-any.whl.metadata (2.1 kB)
+Collecting platformdirs<5,>=3.9.1 (from virtualenv)
+  Downloading platformdirs-4.4.0-py3-none-any.whl.metadata (12 kB)
+Downloading virtualenv-20.34.0-py3-none-any.whl (6.0 MB)
+   ---------------------------------------- 6.0/6.0 MB 3.2 MB/s eta 0:00:00
+Downloading distlib-0.4.0-py2.py3-none-any.whl (469 kB)
+Downloading filelock-3.19.1-py3-none-any.whl (15 kB)
+Downloading platformdirs-4.4.0-py3-none-any.whl (18 kB)
+Installing collected packages: distlib, platformdirs, filelock, virtualenv
+  WARNING: The script virtualenv.exe is installed in 'C:\Users\Lenovo\AppData\Roaming\Python\Python313\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed distlib-0.4.0 filelock-3.19.1 platformdirs-4.4.0 virtualenv-20.34.0
+
+[notice] A new release of pip is available: 24.3.1 -> 25.2
+[notice] To update, run: C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\python.exe -m pip install --upgrade pip
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv) λ py -m virtualenv .venv
+RuntimeError: failed to build image pip because:
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python313\site-packages\distlib\scripts.py", line 287, in _write_script
+    self._fileop.write_binary_file(outname, script_bytes)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python313\site-packages\distlib\util.py", line 558, in write_binary_file
+    with open(path, 'wb') as f:
+         ~~~~^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Lenovo\\Desktop\\Tuwaiq_HM1\\.venv\\Scripts\\pip3.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python313\site-packages\virtualenv\seed\embed\via_app_data\via_app_data.py", line 59, in _install
+    installer.install(creator.interpreter.version_info)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python313\site-packages\virtualenv\seed\embed\via_app_data\pip_install\base.py", line 44, in install
+    consoles.update(self._create_console_entry_point(name, module, script_dir, version_info))
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python313\site-packages\virtualenv\seed\embed\via_app_data\pip_install\base.py", line 141, in _create_console_entry_point
+    new_files = maker.make(specification)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python313\site-packages\distlib\scripts.py", line 435, in make
+    self._make_script(entry, filenames, options=options)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python313\site-packages\distlib\scripts.py", line 340, in _make_script
+    self._write_script(scriptnames, shebang, script, filenames, ext)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python313\site-packages\virtualenv\seed\embed\via_app_data\pip_install\base.py", line 201, in _write_script
+    super()._write_script(names, shebang, script_bytes, filenames, ext)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python313\site-packages\distlib\scripts.py", line 295, in _write_script
+    os.rename(outname, dfname)  # nor here
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Lenovo\\Desktop\\Tuwaiq_HM1\\.venv\\Scripts\\pip3.exe' -> 'C:\\Users\\Lenovo\\Desktop\\Tuwaiq_HM1\\.venv\\Scripts\\pip3.exe.deleteme'
+
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv) λ rmdir /S /Q .venv
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv) λ py -m venv .venv_new
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv) λ .\.venv_new\Scripts\activate.bat
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ pip install --no-cache-dir pandas matplotlib pillow==11.3.0
+Collecting pandas
+  Downloading pandas-2.3.2-cp313-cp313-win_amd64.whl.metadata (19 kB)
+Collecting matplotlib
+  Downloading matplotlib-3.10.6-cp313-cp313-win_amd64.whl.metadata (11 kB)
+Collecting pillow==11.3.0
+  Downloading pillow-11.3.0-cp313-cp313-win_amd64.whl.metadata (9.2 kB)
+Collecting numpy>=1.26.0 (from pandas)
+  Downloading numpy-2.3.2-cp313-cp313-win_amd64.whl.metadata (60 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading contourpy-1.3.3-cp313-cp313-win_amd64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.59.2-cp313-cp313-win_amd64.whl.metadata (111 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading kiwisolver-1.4.9-cp313-cp313-win_amd64.whl.metadata (6.4 kB)
+Collecting packaging>=20.0 (from matplotlib)
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib)
+  Downloading pyparsing-3.2.3-py3-none-any.whl.metadata (5.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading pillow-11.3.0-cp313-cp313-win_amd64.whl (7.0 MB)
+   ---------------------------------------- 7.0/7.0 MB 4.5 MB/s eta 0:00:00
+Downloading pandas-2.3.2-cp313-cp313-win_amd64.whl (11.0 MB)
+   ----------- ---------------------------- 3.1/11.0 MB 7.1 MB/s eta 0:00:02
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ python main.py
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Tuwaiq_HM1\main.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ where python
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1\.venv_new\Scripts\python.exe
+C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps\python.exe
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ where pip
+INFO: Could not find files for the given pattern(s).
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ python -m ensurepip --default-pip
+Looking in links: c:\Users\Lenovo\AppData\Local\Temp\tmp_4v36132
+Requirement already satisfied: pip in c:\users\lenovo\desktop\tuwaiq_hm1\.venv_new\lib\site-packages (24.3.1)
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ python -m pip install --no-cache-dir pandas matplotlib pillow==11.3.0
+Collecting pandas
+  Downloading pandas-2.3.2-cp313-cp313-win_amd64.whl.metadata (19 kB)
+Collecting matplotlib
+  Downloading matplotlib-3.10.6-cp313-cp313-win_amd64.whl.metadata (11 kB)
+Collecting pillow==11.3.0
+  Downloading pillow-11.3.0-cp313-cp313-win_amd64.whl.metadata (9.2 kB)
+Collecting numpy>=1.26.0 (from pandas)
+  Downloading numpy-2.3.2-cp313-cp313-win_amd64.whl.metadata (60 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading contourpy-1.3.3-cp313-cp313-win_amd64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.59.2-cp313-cp313-win_amd64.whl.metadata (111 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading kiwisolver-1.4.9-cp313-cp313-win_amd64.whl.metadata (6.4 kB)
+Collecting packaging>=20.0 (from matplotlib)
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib)
+  Downloading pyparsing-3.2.3-py3-none-any.whl.metadata (5.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading pillow-11.3.0-cp313-cp313-win_amd64.whl (7.0 MB)
+   ---------------------------------------- 7.0/7.0 MB 2.3 MB/s eta 0:00:00
+Downloading pandas-2.3.2-cp313-cp313-win_amd64.whl (11.0 MB)
+   ---------------------------------------- 11.0/11.0 MB 5.7 MB/s eta 0:00:00
+Downloading matplotlib-3.10.6-cp313-cp313-win_amd64.whl (8.1 MB)
+   ---------------------------------------- 8.1/8.1 MB 8.2 MB/s eta 0:00:00
+Downloading contourpy-1.3.3-cp313-cp313-win_amd64.whl (226 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.59.2-cp313-cp313-win_amd64.whl (2.3 MB)
+   ---------------------------------------- 2.3/2.3 MB 11.0 MB/s eta 0:00:00
+Downloading kiwisolver-1.4.9-cp313-cp313-win_amd64.whl (73 kB)
+Downloading numpy-2.3.2-cp313-cp313-win_amd64.whl (12.8 MB)
+   ---------------------------------------- 12.8/12.8 MB 13.9 MB/s eta 0:00:00
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+Downloading pyparsing-3.2.3-py3-none-any.whl (111 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Downloading tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, tzdata, six, pyparsing, pillow, packaging, numpy, kiwisolver, fonttools, cycler, python-dateutil, contourpy, pandas, matplotlib
+Successfully installed contourpy-1.3.3 cycler-0.12.1 fonttools-4.59.2 kiwisolver-1.4.9 matplotlib-3.10.6 numpy-2.3.2 packaging-25.0 pandas-2.3.2 pillow-11.3.0 pyparsing-3.2.3 python-dateutil-2.9.0.post0 pytz-2025.2 six-1.17.0 tzdata-2025.2
+
+[notice] A new release of pip is available: 24.3.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ python main.py
+Empty DataFrame
+Columns: [region, temp echo Riyadh, 42 echo Makkah, 44 echo Madinah, 41 echo Eastern, 45 echo Qassim, 43 echo Hail, 39 echo Tabuk, 38 echo Jouf, 37 echo Northern_Borders, 40 echo Asir, 33 echo Baha, 32 echo Jazan, 36 echo Najran, 35 ]
+Index: []
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Tuwaiq_HM1\.venv_new\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'temp'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Tuwaiq_HM1\main.py", line 11, in <module>
+    ax.plot(df['region'], df['temp'], marker='o', color='#0378A6', linestyle='-', linewidth=2, markersize=8)
+                          ~~^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Tuwaiq_HM1\.venv_new\Lib\site-packages\pandas\core\frame.py", line 4107, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Lenovo\Desktop\Tuwaiq_HM1\.venv_new\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'temp'
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ del data.csv
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ ( echo region,temp echo Riyadh,42 echo Makkah,44 echo Madinah,41 echo Eastern,45 echo Qassim,43 echo Hail,39 echo Tabuk,38 echo Jouf,37 echo Northern_Borders,40 echo Asir,33 ec
+ho Baha,32 echo Jazan,36 echo Najran,35 ) > data.csv
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ python main.py
+Empty DataFrame
+Columns: [region, temp echo Riyadh, 42 echo Makkah, 44 echo Madinah, 41 echo Eastern, 45 echo Qassim, 43 echo Hail, 39 echo Tabuk, 38 echo Jouf, 37 echo Northern_Borders, 40 echo Asir, 33 echo Baha, 32 echo Jazan, 36 echo Najran, 35 ]
+Index: []
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Tuwaiq_HM1\.venv_new\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'temp'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Tuwaiq_HM1\main.py", line 11, in <module>
+    ax.plot(df['region'], df['temp'], marker='o', color='#0378A6', linestyle='-', linewidth=2, markersize=8)
+                          ~~^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Tuwaiq_HM1\.venv_new\Lib\site-packages\pandas\core\frame.py", line 4107, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Lenovo\Desktop\Tuwaiq_HM1\.venv_new\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'temp'
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ notepad data.csv
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ python main.py
+              region  temp
+0             Riyadh    42
+1             Makkah    44
+2            Madinah    41
+3            Eastern    45
+4             Qassim    43
+5               Hail    39
+6              Tabuk    38
+7               Jouf    37
+8   Northern_Borders    40
+9               Asir    33
+10              Baha    32
+11             Jazan    36
+12            Najran    35
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ py -m pip install --user uv
+
+[notice] A new release of pip is available: 24.3.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+ERROR: Can not perform a '--user' install. User site-packages are not visible in this virtualenv.
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ python -m pip install uv
+Collecting uv
+  Downloading uv-0.8.15-py3-none-win_amd64.whl.metadata (12 kB)
+Downloading uv-0.8.15-py3-none-win_amd64.whl (21.2 MB)
+   ---------------------------------------- 21.2/21.2 MB 8.9 MB/s eta 0:00:00
+Installing collected packages: uv
+Successfully installed uv-0.8.15
+
+[notice] A new release of pip is available: 24.3.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ uv --version
+uv 0.8.15 (8473ecba1 2025-09-03)
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ python -m pip install uv
+Requirement already satisfied: uv in c:\users\lenovo\desktop\tuwaiq_hm1\.venv_new\lib\site-packages (0.8.15)
+
+[notice] A new release of pip is available: 24.3.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ uv --version
+uv 0.8.15 (8473ecba1 2025-09-03)
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ uv init .
+Adding `tuwaiq-hm1` as member of workspace `C:\Users\Lenovo`
+Initialized project `tuwaiq-hm1` at `C:\Users\Lenovo\Desktop\Tuwaiq_HM1`
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ uv add pandas matplotlib
+warning: `VIRTUAL_ENV=.venv_new` does not match the project environment path `C:\Users\Lenovo\.venv` and will be ignored; use `--active` to target the active environment instead
+Resolved 113 packages in 2.36s
+Prepared 7 packages in 4.63s
+Installed 7 packages in 157ms
+ + contourpy==1.3.3
+ + cycler==0.12.1
+ + fonttools==4.59.2
+ + kiwisolver==1.4.9
+ + matplotlib==3.10.6
+ + pillow==11.3.0
+ + pyparsing==3.2.3
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ uv export --format requirements-txt > requirements.txt
+Resolved 113 packages in 2ms
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ main.py
+              region  temp
+0             Riyadh    42
+1             Makkah    44
+2            Madinah    41
+3            Eastern    45
+4             Qassim    43
+5               Hail    39
+6              Tabuk    38
+7               Jouf    37
+8   Northern_Borders    40
+9               Asir    33
+10              Baha    32
+11             Jazan    36
+12            Najran    35
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/Tuwaiq_HM1/.git/
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (master)
+(.venv_new) λ git add .
+warning: in the working copy of 'pyproject.toml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'requirements.txt', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (master)
+(.venv_new) λ git commit -m "Initial commit: project with data.csv, main.py, and requirements"
+[master (root-commit) 76339e2] Initial commit: project with data.csv, main.py, and requirements
+ 8 files changed, 368 insertions(+)
+ create mode 100644 25.2
+ create mode 100644 Figure.png
+ create mode 100644 README.md
+ create mode 100644 data.csv
+ create mode 100644 dataset.txt
+ create mode 100644 main.py
+ create mode 100644 pyproject.toml
+ create mode 100644 requirements.txt
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (master)
+(.venv_new) λ git remote add origin https://github.com/khalidalzzahranii-eng/TuwaiqDS_HM1.git
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (master)
+(.venv_new) λ git branch -M main
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main)
+(.venv_new) λ git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 22 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 99.60 KiB | 12.45 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/khalidalzzahranii-eng/TuwaiqDS_HM1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\Lenovo\Desktop\Tuwaiq_HM1 (main -> origin)
+(.venv_new) λ notepad commands.txt
